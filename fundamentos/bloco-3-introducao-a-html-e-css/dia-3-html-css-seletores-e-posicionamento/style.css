@@ -1,0 +1,56 @@
+ol li {
+  background-color: yellow;
+}
+
+ol li.par {
+  background-color: green;
+}
+
+ol li.ímpar  {
+  text-transform: uppercase;
+}
+
+.header {
+  color: red;
+}
+
+.header em {
+  font-size: 40px;
+  border: solid 1px;
+}
+
+li {
+  font-size: 20px;
+}
+
+li em {
+  font-weight: bold;
+}
+
+.list-item {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a.laranja:hover {
+  color: orange;
+}
+
+a.verde:hover {
+  color: green;
+}
+
+a.preta:hover {
+  color: black;
+}
+
+a.amarela:hover { 
+  color:yellow;
+}
