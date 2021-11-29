@@ -67,7 +67,7 @@ let smallestNumber = numbers[0];
     console.log(numeros[index] / 2);
   };
 
-//--------------------------------------------------------------------------------------------------- Pesquisar, plantão, tira dúvida!
+//-------------------------------------------------------------------- Pesquisar, plantão, tira dúvida!
 
   for (let index = 1; index < numbers.length; index += 1) {
     for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
