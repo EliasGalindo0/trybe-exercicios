@@ -24,7 +24,7 @@ const area = base * height;
 
 const perimeter = base + height + base + height;
 
-// console.log(area);
+console.log(area);
 
 console.log(perimeter);
 
