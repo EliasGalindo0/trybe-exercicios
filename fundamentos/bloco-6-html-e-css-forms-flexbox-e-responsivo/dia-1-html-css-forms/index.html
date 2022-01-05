@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="form-header">
+    <h1>Formulário para cadastro de currículo</h1>
+    <p>Preencha os campos abaixo.</p>
+  </header>
+  <main>
+    <form id="cv-form" method="get">
+
+  <fieldset>
+<!-- Nome - Texto
+Limite de 40 caracteres
+Campo obrigatório -->
+<Label for="nome-completo">Nome
+  <input type="text" maxlength="40" name="nome" id="nome-completo" required>
+</Label>
+<!-- Email - Texto
+Limite de 50 caracteres
+Campo obrigatório -->
+<label for="e-mail">E-mail
+  <input type="text" maxlength="50" name="e-mail" id="e-mail" required>
+</label>
+<!-- CPF - Texto
+Limite de 11 caracteres
+Campo obrigatório -->
+<label for="cpf">CPF
+  <input type="text" maxlength="11" id="cpf" name="CPF" required>
+</label>
+<!-- Endereço - Texto
+Limite de 200 caracteres
+Campo obrigatório -->
+<label for="endereço">Endereço 
+  <input type="text" maxlength="200" id="endereço" name="endereço" required>
+</label>
+<!-- Cidade - Texto
+Limite de 28 caracteres
+Campo obrigatório -->
+<label for="cidade">Cidade 
+  <input type="text" maxlength="28" id="cidade" required>
+</label>
+<!-- Estado - Select
+Todos os estados do Brasil
+Utilize estruturas de repetição via JavaScript para gerar os <option>
+Campo obrigatório -->
+<label for="estado">Estado 
+  <select name="estado" id="estado" required>
+  </select>
+</label>
+<!-- Tipo - Radio Button
+Casa, Apartamento
+Campo obrigatório -->
+<label>Tipo 
+  <input type="radio" name="housetype" id="house" value="house" checked required>
+  <label for="house">Casa</label>
+  <input type="radio" name="housetype" id="apartament" value="apartament" required>
+  <label for="apartament">Apartamento</label>
+</label>
+<button type="submit">Cadastrar</button>
+  </fieldset>
+</form>
+  
+  <script src="script.js"></script>
+</body> 
+</html>
