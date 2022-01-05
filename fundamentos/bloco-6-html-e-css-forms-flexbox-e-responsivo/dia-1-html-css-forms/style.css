@@ -1,0 +1,11 @@
+body {
+  background-color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.fieldset {
+  background-color: blanchedalmond;
+  border-radius: 5px;
+  text-align: center;  
+}
