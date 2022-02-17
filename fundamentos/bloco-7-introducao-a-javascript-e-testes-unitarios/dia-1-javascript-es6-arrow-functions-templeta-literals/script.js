@@ -20,4 +20,12 @@ const sorted = (array) => {
 const sortedArray = sorted(oddsAndEvens);
 
 console.log(`Os números ${sortedArray} estão ordenados de forma crescente!`); // será necessário alterar essa linha 😉
-console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} estão ordenados de forma crescente!`);
+console.log(
+  `Os números ${oddsAndEvens.sort(
+    (a, b) => a - b
+  )} estão ordenados de forma crescente!`
+);
+
+const sum = (n1, n2) => n1 + n2;
+
+console.log(sum(3,5));
