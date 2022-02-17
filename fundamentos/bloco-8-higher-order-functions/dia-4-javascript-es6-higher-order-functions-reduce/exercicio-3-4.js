@@ -61,29 +61,29 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+const expectedResult = 43;
 
-// 1 - Crie um array com strings no formato NOME_DO_LIVRO - GÊNERO_DO_LIVRO - NOME_DA_PESSOA_AUTORA
-// Dica: Use a função map
-const expectedResult = [
-  'As Crônicas de Gelo e Fogo - Fantasia - George R. R. Martin',
-  'O Senhor dos Anéis - Fantasia - J. R. R. Tolkien',
-  'Fundação - Ficção Científica - Isaac Asimov',
-  'Duna - Ficção Científica - Frank Herbert',
-  'A Coisa - Terror - Stephen King',
-  'O Chamado de Cthulhu - Terror - H. P. Lovecraft',
-];
+const averageAge = () => {
+  const bookList = books.length;
+  const ages = books.reduce((sum, book) => (
+    sum + (book.releaseYear - book.author.birthYear)
+  ), 0);
+  return ages / bookList;
+};
 
-const formatedBookNames = books.map((book) => `${book.name} - ${book.genre} - ${book.author.name}`);
+const averageAgeResult = averageAge();
 
-  console.log(formatedBookNames);
+console.log(averageAgeResult);
 
-  const verify = (expectedResult, formatedBookNames) => {
-    if (expectedResult === formatedBookNames) {
-      console.log('Acertou mizerávi!!!');
-    } else { 
-      console.log('Péeeeeeennnn!');
+const longestNamedBook = () => {
+  return books.reduce((biggestBook, currentBook) => {
+    if (currentBook.name.length > biggestBook.name.length) {
+      return currentBook;
     }
-  };
+    return biggestBook;
+  });
+};
 
-  verify();
+const longestNamedBookResult = longestNamedBook();
+
+console.log(longestNamedBookResult);
