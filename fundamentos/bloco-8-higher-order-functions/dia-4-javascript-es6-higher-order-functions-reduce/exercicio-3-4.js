@@ -64,14 +64,26 @@ const books = [
 const expectedResult = 43;
 
 const averageAge = () => {
-  // escreva seu código aqui
-}
+  const bookList = books.length;
+  const ages = books.reduce((sum, book) => (
+    sum + (book.releaseYear - book.author.birthYear)
+  ), 0);
+  return ages / bookList;
+};
 
-console.log(reduceNames);
+const averageAgeResult = averageAge();
 
-const verify = (expectedResult, reduceNames) => 
-expectedResult === reduceNames 
-? console.log('Acertou mizerávi!!!') 
-: console.log('Péeeeeeennnn!');
+console.log(averageAgeResult);
 
-verify();
+const longestNamedBook = () => {
+  return books.reduce((biggestBook, currentBook) => {
+    if (currentBook.name.length > biggestBook.name.length) {
+      return currentBook;
+    }
+    return biggestBook;
+  });
+};
+
+const longestNamedBookResult = longestNamedBook();
+
+console.log(longestNamedBookResult);
