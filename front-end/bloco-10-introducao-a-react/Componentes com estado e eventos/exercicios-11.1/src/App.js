@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import Password from './components/Password';
+import Form from './components/Forms';
 
 class App extends React.Component {
   constructor() {
@@ -68,6 +70,8 @@ class App extends React.Component {
         >
           Botão 3 | Count = { clicksBtnThree }
         </button>
+        <Password />
+        <Form />
       </div>
     );
   }
